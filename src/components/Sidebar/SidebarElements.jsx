@@ -5,6 +5,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
+  z-index: 999;
   width: 100%;
   height: 100%;
   background: #000e0f;
@@ -15,7 +16,6 @@ export const SidebarContainer = styled.aside`
   transition: all 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-  z-index: 999;
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -49,8 +49,8 @@ export const SidebarLink = styled(LinkS)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    transform: scale(1.12);
-    color: #009bb0;
+    transform: scale(1.1);
+    border-bottom: 3px solid #00e1ff;
   }
 `;
 
