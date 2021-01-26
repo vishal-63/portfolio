@@ -49,8 +49,8 @@ export const SidebarLink = styled(LinkS)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    transform: scale(1.1);
-    border-bottom: 3px solid #00e1ff;
+    transform: scale(1.12);
+    color: #009bb0;
   }
 `;
 
