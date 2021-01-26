@@ -24,8 +24,13 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  max-width: 950px;
-  padding: 0 24px;
+  max-width: 960px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 400px;
+    position: absolute;
+    left: 0;
+  }
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -50,8 +55,8 @@ export const MobileIcon = styled.div`
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
-    cursor: pointer;
     color: #00e1ff;
+    cursor: pointer;
   }
 `;
 
@@ -87,7 +92,7 @@ export const NavLinks = styled(LinkS)`
   }
 
   &:hover {
-    color: #009bb0;
+    color: #60c3d1;
     transform: scale(1.12);
   }
 `;
