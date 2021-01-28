@@ -3,7 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: #000e0f;
+  background: #090909;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -12,6 +12,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   font-size: 1rem;
+  margin-top: -80px;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -24,12 +25,12 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  max-width: 960px;
+  max-width: 850px;
 
   @media screen and (max-width: 768px) {
     max-width: 200px;
     position: absolute;
-    left: 0;
+    left: -30px;
   }
 `;
 
@@ -41,8 +42,9 @@ export const NavLogo = styled(LinkR)`
   align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
-  margin-left: 24px;
+  margin-left: 48px;
   text-decoration: none;
+  letter-spacing: 3.5px;
 `;
 
 export const MobileIcon = styled.div`
@@ -93,13 +95,13 @@ export const NavLinks = styled(LinkS)`
 
   &:hover {
     color: #60c3d1;
-    transform: scale(1.12);
+    border-bottom: 3px solid #60c3d1;
   }
 `;
 
 export const NavBtn = styled.div`
   display: flex;
-  align-itmes: start;
+  align-items: start;
 
   media screen and (max-width: 768px) {
     display: none;
@@ -116,6 +118,7 @@ export const NavBtnLink = styled(LinkR)`
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  font-family: "Ubuntu", sans-serif;
   text-decoration: none;
 
   &:hover {
