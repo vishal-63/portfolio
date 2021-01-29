@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 650px;
+  height: 830px;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
@@ -131,7 +131,7 @@ export const Skill = styled.li`
   text-align: center;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 `;
 
