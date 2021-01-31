@@ -56,19 +56,10 @@ export const HeroP = styled.p`
   }
 `;
 
-export const HeroH1 = styled.h1`
-  margin-top: 10px;
-  font-size: 5rem;
-  color: #00e1ff;
-  letter-spacing: 8px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 4rem;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 2.5rem;
-  }
+export const HeroH1 = styled.div`
+  // @media screen and (max-width: 960px) {
+  //   width: 800px;
+  // }
 `;
 
 export const HeroWebDev = styled.p`

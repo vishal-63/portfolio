@@ -115,14 +115,16 @@
 }
 
 /* responsive queries */
-@media screen and (max-width: 1170px) {
-  .projectsWrapper {
-    grid-template-columns: 1fr 1fr;
-  }
-
+@media screen and (max-width: 1210px) {
   .projectsCard,
   .projectsImg {
     width: 330px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .projectsWrapper {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

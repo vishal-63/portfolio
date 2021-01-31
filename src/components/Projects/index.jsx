@@ -6,7 +6,7 @@ import Icon3 from "../../images/img-3.jpg";
 import Icon4 from "../../images/img-4.jpg";
 import Icon5 from "../../images/img-5.jpg";
 import Icon6 from "../../images/img-6.jpg";
-import "./index.css";
+import "./Projects.css";
 
 const Projects = () => {
   return (
