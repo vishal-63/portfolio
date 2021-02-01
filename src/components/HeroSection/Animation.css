@@ -1,4 +1,5 @@
 #logo {
+  fill: transparent;
   animation: fill-anim 0.5s ease forwards 4s;
 }
 

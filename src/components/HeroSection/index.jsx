@@ -130,12 +130,17 @@ const HeroSection = () => {
         <HeroWebDev>WEB DEVELOPER</HeroWebDev>
         <HeroBtnWrapper>
           <Button
-            to="contact"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
             dark="true"
             fontBig="true"
+            to="contact"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
           >
             Contact Me {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>

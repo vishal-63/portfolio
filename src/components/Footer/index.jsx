@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./Footer.css";
 import ContactForm from "./ContactForm";
 import ContactIcon from "../../images/svg-3.svg";
@@ -12,6 +12,10 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <div className="footerContainer" id="contact">
       <div className="footerWrap">
@@ -22,7 +26,7 @@ const Footer = () => {
       </div>
       <div className="socialMedia">
         <div className="socialMediaWrap">
-          <Link to="home" className="socialLogo">
+          <Link to="home" className="socialLogo" onClick={toggleHome}>
             Vishal Shah
           </Link>
           <div className="websiteRights">
